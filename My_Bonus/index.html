@@ -18,29 +18,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-light text-center mt-5">Videogames Card Generator</h1>
+                    <h1 class="text-light text-center mt-5">Videogames Cards Generator</h1>
                 </div>
                <div class="row mt-5">
                 <div class="col-12 d-flex justify-content-around">
-                    <input type="text" placeholder="Titolo del gioco">
-                    <input type="text" placeholder="Sorgente immagine">
-                    <input type="text" placeholder="Breve descrizione">
-                    <input type="button" value="Genera Card!">
+                    <input type="text" v-model="title" placeholder="Titolo del gioco">
+                    <input type="text" v-model="imgSrcUpdate" placeholder="Sorgente immagine">
+                    <input type="text" v-model="description" placeholder="Breve descrizione">
+                    <!-- <a class="btn btn-secondary" href="#" role="button" @click="generateCard">Genera Card!</a> -->
+                    <button type="button" class="btn btn-success" @click="generateCard">Genera Card!</button>
                 </div>
                </div>
-              <div class="row mt-5">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
-                    </div>
-                </div>
-              </div>
+               <div id="wrapper">
+
+               </div>
             </div>
         </div>
     </div>
