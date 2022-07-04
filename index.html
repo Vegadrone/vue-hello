@@ -11,6 +11,9 @@
     <div id="root">
         <h1 :class="colorClasses">{{message}}</h1>
         <p :class="colorClasses">{{textInput}}</p>
+        <div>
+            <img :src="img" alt="">
+        </div>
         <input type="text" v-model="textInput" placeholder="scrivi e scopri la maggia!">
         <input type="button" value="Cliccami e accadrà un'altra maggia!" @click="changeColorOnClick">
     </div>
